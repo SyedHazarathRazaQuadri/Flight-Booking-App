@@ -452,6 +452,9 @@ ul.radio-buttons-lg-agileits li {
   fieldset{
     border: 1px solid gray !important;
   }
+  .css-emku8u, .css-1sjjn1c-MuiDataGrid-panelContent{
+    max-width: 385px;
+  }
 }
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root, .css-p0rm37{
   padding-bottom: 12px !important;
