@@ -399,7 +399,7 @@ ul.radio-buttons-lg-agileits li {
 .css-1g7nc1s-MuiPickersLayout-root .MuiPickersLayout-actionBar{
     background-color: #f1f8ee;
 }
-.css-vubbuv{
+.MuiIconButton-sizeMedium svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-vubbuv{
   color: white;
 }
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
@@ -462,7 +462,7 @@ ul.radio-buttons-lg-agileits li {
     border: 1px solid gray !important;
   }
   .css-emku8u, .css-1sjjn1c-MuiDataGrid-panelContent{
-    max-width: 385px;
+    max-width: 360px;
   }
 }
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root, .css-p0rm37{
