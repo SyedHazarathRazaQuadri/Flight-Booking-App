@@ -77,6 +77,8 @@ h3.sub-heading-agileits {
 .radio-buttons-lg-agileits li label {
   color: #fff;
   font-size: 13.5px;
+  font-size: 16px;
+  padding-left: 5px;
   font-weight: 400;
   letter-spacing: 1px;
   font-family: 'Raleway', sans-serif;
@@ -394,4 +396,55 @@ ul.radio-buttons-lg-agileits li {
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
     color: black !important;
     font-weight: bold;
+}
+
+/* Flight List Styles */
+.full_table_data{
+  width: 100%;
+  overflow-x: scroll;
+}
+.full_table_data tr th{
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #0A8DD0;
+  color: white !important;
+}
+.full_table_data tr th, .full_table_data tr td{
+  min-width: 250px;
+  border: 1px solid gray;
+  color: black;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-row:nth-child(even){
+  background-color: #eceef1;
+}
+.search_bar input{
+  border: 1px solid gray;
+}
+.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root, .css-1eed5fa-MuiInputBase-root-MuiInput-root{
+  padding: 0 !important;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader--sortable, .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
+  border: 0.1px solid gray;
+  width: 250px !important;
+  max-width: 250px !important;
+  justify-content: center;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+  border-color: gray !important;
+  border-top: 1px solid gray;
+}
+.css-128fb87-MuiDataGrid-toolbarContainer{
+  display: grid !important;
+  grid-template: auto / auto auto;
+  padding-top: 1rem !important;
+}
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root:nth-child(1), .css-1knaqv7-MuiButtonBase-root-MuiButton-root:nth-child(3){
+  display: none;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
+  justify-content: center;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader--sortable {
+  background-color: #0A8DD0;
+  color: white !important;
 }

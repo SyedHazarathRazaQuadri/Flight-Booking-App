@@ -1,12 +1,16 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import TravelRequest from './Components/TravelRequest';
-import ResponsiveNavBar from './Navigation';
+import Homepage from './Pages/Homepage';
+import FlightListPage from './Pages/FlightListPage';
 
 function App() {
   return (
     <>
-      <ResponsiveNavBar />
-      <TravelRequest />
+    <Routes>
+      <Route index element={<Homepage />} />
+      <Route path="/home" element={<Homepage />} />
+      <Route path="/flight-list" element={<FlightListPage />} />
+    </Routes>
     </>
   );
 }

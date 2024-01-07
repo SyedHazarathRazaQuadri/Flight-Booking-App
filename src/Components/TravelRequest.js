@@ -18,15 +18,20 @@ function TravelRequest() {
                 <div className="field-agileinfo-spc form-lg-agile-text1">
                     <select className="form-control">
                     <option>From</option>
-                        <option>Mumbai</option>
                         <option>Chennai International Airport</option>
+                        <option>Chhatrapati Shivaji International Airport</option>
+                        <option>Indira Gandhi Airport</option>
+                        <option>Mumbai</option>
+
                     </select>
                 </div>
                 <div className="field-agileinfo-spc form-lg-agile-text2">
                     <select className="form-control">
                     <option>To</option>
-                    <option>Mumbai</option>
                     <option>Chennai International Airport</option>
+                    <option>Chhatrapati Shivaji International Airport</option>
+                    <option>Indira Gandhi Airport</option>
+                    <option>Mumbai</option>
                     </select>
                 </div>
             </div>
@@ -135,19 +140,19 @@ function TravelRequest() {
             </div>
             )}
             <div className="field-agileinfo-spc form-lg-agile-text">
-                <textarea name="Message" placeholder="Any Message..."></textarea>
+                <textarea name="Message" placeholder="Any Special Request Note..."></textarea>
             </div>
             <h3 className="sub-heading-agileits">Personal Details</h3>
             <div className="main-flex-lgls-sectns">
                 <div className="field-agileinfo-spc form-lg-agile-text1">
-                    <input type="text" name="Name" placeholder="Full Name" required="" />
+                    <input type="text" name="Name" placeholder="Full Name" required />
                 </div>
                 <div className="field-agileinfo-spc form-lg-agile-text2">
-                    <input type="text" name="Phone no" placeholder="Phone Number" required="" />
+                    <input type="text" name="Phone no" placeholder="Phone Number" required />
                 </div>
             </div>
             <div className="field-agileinfo-spc form-lg-agile-text">
-                <input type="email" name="Email" placeholder="Email" required="" />
+                <input type="email" name="Email" placeholder="Email" required />
             </div>
             <div className="clear"></div>
             <input className='form_submit_button' type="submit" value="Submit" />

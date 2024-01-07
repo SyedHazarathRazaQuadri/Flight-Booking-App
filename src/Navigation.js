@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import './App.css'
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,13 +13,14 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import FlightIcon from '@mui/icons-material/Flight';
+import { useState } from 'react'
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "Flight List", "About Us"];
 const settings = ["Profile", "Logout"];
 
 function ResponsiveNavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,7 +42,7 @@ function ResponsiveNavBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <FlightIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
+          <Link to="/home"><Typography
             variant="h6"
             noWrap
             component="a"
@@ -56,7 +58,7 @@ function ResponsiveNavBar() {
             }}
           >
             Flights
-          </Typography>
+          </Typography></Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -87,11 +89,15 @@ function ResponsiveNavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <Link to="/home" ><MenuItem>
+                <Typography textAlign="center">Home</Typography>
+              </MenuItem></Link>
+              <Link to="/flight-list" ><MenuItem>
+                <Typography textAlign="center">Flight List</Typography>
+              </MenuItem></Link>
+              <Link to="#" ><MenuItem>
+                <Typography textAlign="center">About Us</Typography>
+              </MenuItem></Link>
             </Menu>
           </Box>
           <FlightIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -114,15 +120,15 @@ function ResponsiveNavBar() {
             Flights
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+              <Link to="/home" ><Button sx={{ my: 2, color: "white", display: "block" }}>
+                Home
+              </Button></Link>
+              <Link to="/flight-list" ><Button sx={{ my: 2, color: "white", display: "block" }}>
+                Flight List
+              </Button></Link>
+              <Link to="#" ><Button sx={{ my: 2, color: "white", display: "block" }}>
+                About Us
+              </Button></Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -148,9 +154,9 @@ function ResponsiveNavBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <Link to='/home'><MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
+                </MenuItem></Link>
               ))}
             </Menu>
           </Box>
