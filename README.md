@@ -1,4 +1,4 @@
-# Flights Booking Application which includes All Flights List as well
+# Flights Booking Application
 
 This Website Link:👉🏻 [Flight Booking App](https://flights-booking-app.netlify.app).
 
