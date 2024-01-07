@@ -381,6 +381,12 @@ ul.radio-buttons-lg-agileits li {
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root, .css-1bn53lx{
     padding: 0.5rem 0.5rem 0.5rem 13rem;
 }
+.css-1x5jdmq, .MuiOutlinedInput-root input{
+  padding: 0.5rem 0.5rem 2rem 0 !important;
+}
+.main-flex-lgls-sectns{
+  text-align: left;
+}
 .MuiInputBase-input{
     border: none !important;
 }
