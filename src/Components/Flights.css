@@ -420,6 +420,9 @@ ul.radio-buttons-lg-agileits li {
 .search_bar input{
   border: 1px solid gray;
 }
+.MuiBox-root a {
+  padding: 0 8rem;
+}
 .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root, .css-1eed5fa-MuiInputBase-root-MuiInput-root{
   padding: 0 !important;
 }
@@ -447,4 +450,21 @@ ul.radio-buttons-lg-agileits li {
 .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader--sortable {
   background-color: #0A8DD0;
   color: white !important;
+}
+.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root{
+  color: white !important;
+  display: block !important;
+}
+.MuiDataGrid-columnSeparator{
+  display: none !important;
+}
+.MuiDataGrid-menuIcon, .MuiDataGrid-iconButtonContainer{
+  visibility: visible !important;
+  width: auto !important;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeaderDraggableContainer{
+  padding-left: 45px;
+}
+.MuiDataGrid-sortIcon{
+  opacity: 0.8 !important;
 }
