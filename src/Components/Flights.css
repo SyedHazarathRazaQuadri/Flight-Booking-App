@@ -378,7 +378,7 @@ ul.radio-buttons-lg-agileits li {
     padding: 0px 12px 5px 0px;
   }
 }
-.MuiInputBase-root{
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root, .css-1bn53lx{
     padding: 0.5rem 0.5rem 0.5rem 13rem;
 }
 .MuiInputBase-input{
@@ -392,6 +392,9 @@ ul.radio-buttons-lg-agileits li {
 }
 .css-1g7nc1s-MuiPickersLayout-root .MuiPickersLayout-actionBar{
     background-color: #f1f8ee;
+}
+.css-vubbuv{
+  color: white;
 }
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
     color: black !important;
