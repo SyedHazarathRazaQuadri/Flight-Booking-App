@@ -132,7 +132,7 @@ function ResponsiveNavBar() {
               </Link>
               <Link to="/flight-list" >
                 <Button sx={{ my: 2, color: "white", display: "block" }}>
-                  Flight List
+                  Flights List
                 </Button>
               </Link>
               <Link to="#" >
