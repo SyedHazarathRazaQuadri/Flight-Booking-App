@@ -46,7 +46,6 @@ function ResponsiveNavBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -89,15 +88,21 @@ function ResponsiveNavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <Link to="/home" ><MenuItem>
+              <Link to="/home" >
+                <MenuItem>
                 <Typography textAlign="center">Home</Typography>
-              </MenuItem></Link>
-              <Link to="/flight-list" ><MenuItem>
+              </MenuItem>
+              </Link>
+              <Link to="/flight-list" >
+                <MenuItem>
                 <Typography textAlign="center">Flight List</Typography>
-              </MenuItem></Link>
-              <Link to="#" ><MenuItem>
+              </MenuItem>
+              </Link>
+              <Link to="#" >
+                <MenuItem>
                 <Typography textAlign="center">About Us</Typography>
-              </MenuItem></Link>
+              </MenuItem>
+              </Link>
             </Menu>
           </Box>
           <FlightIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -120,15 +125,21 @@ function ResponsiveNavBar() {
             Flights
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Link to="/home" ><Button sx={{ my: 2, color: "white", display: "block" }}>
-                Home
-              </Button></Link>
-              <Link to="/flight-list" ><Button sx={{ my: 2, color: "white", display: "block" }}>
-                Flight List
-              </Button></Link>
-              <Link to="#" ><Button sx={{ my: 2, color: "white", display: "block" }}>
-                About Us
-              </Button></Link>
+              <Link to="/home" >
+                <Button sx={{ my: 2, color: "white", display: "block" }}>
+                  Home
+                </Button>
+              </Link>
+              <Link to="/flight-list" >
+                <Button sx={{ my: 2, color: "white", display: "block" }}>
+                  Flight List
+                </Button>
+              </Link>
+              <Link to="#" >
+                <Button sx={{ my: 2, color: "white", display: "block" }}>
+                  About Us
+                </Button>
+              </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -153,8 +164,8 @@ function ResponsiveNavBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <Link to='/home'><MenuItem key={setting} onClick={handleCloseUserMenu}>
+              {settings.map((setting, index) => (
+                <Link to='/home' key={index}><MenuItem onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem></Link>
               ))}

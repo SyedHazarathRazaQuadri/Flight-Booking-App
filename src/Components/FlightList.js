@@ -3,7 +3,7 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import CircularProgress from '@mui/material/CircularProgress';
 import FlightIcon from '@mui/icons-material/Flight';
 
-const VISIBLE_FIELDS = ['Id', 'Fare', 'DepartureCityCode', 'DepartureCityName', 'DepartureTerminal', 'DepartureAirportCode', 'DepartureAirportName', 'DepartureCountryCode', 'DepartureCountryName', 'DepartureTime', 'AirlineCode', 'AirlineName', 'FlightNumber', 'StopInfo', 'ArrivalCityCode', 'ArrivalCityName', 'ArrivalTerminal', 'ArrivalAirportCode', 'ArrivalAirportName', 'ArrivalCountryCode', 'ArrivalCountryName', 'ArrivalTime', 'TotalDuration'];
+const flightsHeadingData = ['Id', 'Fare', 'DepartureCityCode', 'DepartureCityName', 'DepartureTerminal', 'DepartureAirportCode', 'DepartureAirportName', 'DepartureCountryCode', 'DepartureCountryName', 'DepartureTime', 'AirlineCode', 'AirlineName', 'FlightNumber', 'StopInfo', 'ArrivalCityCode', 'ArrivalCityName', 'ArrivalTerminal', 'ArrivalAirportCode', 'ArrivalAirportName', 'ArrivalCountryCode', 'ArrivalCountryName', 'ArrivalTime', 'TotalDuration'];
 
 function FlightList() {
   const [loading, setLoading] = React.useState(true);
@@ -68,7 +68,7 @@ function FlightList() {
         </div>
         <DataGrid
           rows={flightsData}
-          columns={VISIBLE_FIELDS.map((field) => ({ field, headerName: field.charAt(0).toUpperCase() + field.slice(1) }))}
+          columns={flightsHeadingData.map((field) => ({ field, headerName: field.charAt(0).toUpperCase() + field.slice(1) }))}
           pageSize={5}
           rowsPerPageOptions={[5, 10, 20]}
           pagination
