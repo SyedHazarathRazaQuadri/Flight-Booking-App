@@ -426,13 +426,37 @@ ul.radio-buttons-lg-agileits li {
 .css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root, .css-1eed5fa-MuiInputBase-root-MuiInput-root{
   padding: 0 !important;
 }
-.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader--sortable, .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
+.MuiDataGrid-columnHeader--sortable, .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
   border: 0.1px solid gray;
   width: 250px !important;
   max-width: 250px !important;
   justify-content: center;
 }
-.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+.css-aop0yh .MuiDataGrid-withBorderColor {
+  border-color: gray;
+  border: 0.1px solid gray;
+}
+.css-aop0yh .MuiDataGrid-columnHeaderTitleContainer{
+  justify-content: center;
+  padding-left: 2rem;
+}
+.MuiDataGrid-toolbarContainer.css-1yqais2 {
+  display: grid !important;
+  grid-template: auto / auto auto;
+  padding-top: 1rem !important;
+}
+.MuiDataGrid-toolbarContainer.css-1yqais2 button:nth-child(1), .MuiDataGrid-toolbarContainer.css-1yqais2 button:nth-child(3){
+  display: none;
+}
+@media (max-width: 600px) {
+  fieldset{
+    border: 1px solid gray !important;
+  }
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root, .css-p0rm37{
+  padding-bottom: 12px !important;
+}
+.MuiDataGrid-withBorderColor {
   border-color: gray !important;
   border-top: 1px solid gray;
 }
@@ -447,9 +471,15 @@ ul.radio-buttons-lg-agileits li {
 .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer{
   justify-content: center;
 }
-.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader--sortable {
+.MuiDataGrid-columnHeader--sortable {
   background-color: #0A8DD0;
   color: white !important;
+}
+.css-aop0yh .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight) > .MuiDataGrid-cell {
+  max-width: 250px !important;
+  width: 250px !important;
+  border: 0.1px solid gray;
+  justify-content: center;
 }
 .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root{
   color: white !important;

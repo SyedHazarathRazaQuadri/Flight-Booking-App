@@ -64,7 +64,7 @@ function FlightList() {
         <>
         <div className='text-center w-full max-w-screen-lg mx-auto pt-4'>
           <h1 style={{ display: 'flex', justifyContent: 'center' }} className="text-4xl font-bold mb-4">All Flights List <FlightIcon style={{ width: '40px', height: '40px', marginLeft: '5px', transform: 'rotate(45deg)' }} /></h1>
-          <p className="text-gray-600 mb-6">Browse the list of available flights below. Choose your preferred flight and have a great journey ✈️</p>
+          <p className="text-gray-600 mb-6 px-2">Browse the list of available flights below. Choose your preferred flight and have a great journey ✈️</p>
         </div>
         <DataGrid
           rows={flightsData}
